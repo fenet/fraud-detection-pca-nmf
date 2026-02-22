@@ -19,6 +19,9 @@ Techniques Used
 - PCA (Eigen decomposition / SVD)
 - NMF (Matrix factorization with non-negativity constraints)
 
+Dataset
+
+- Olivetti Dataset
 
 Tech Stack
  
