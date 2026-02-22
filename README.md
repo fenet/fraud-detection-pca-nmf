@@ -1,35 +1,33 @@
-Project Overview
+Fraud Detection using PCA & NMF
 
-This project demonstrates dimensionality reduction techniques using:
+This project applies dimensionality reduction techniques (PCA and NMF) as feature engineering methods for credit card fraud detection.
 
-- Principal Component Analysis (PCA)
-- Non-negative Matrix Factorization (NMF)
+The goal is to evaluate whether reducing feature space improves model efficiency while maintaining fraud detection performance under severe class imbalance.
 
-The goal is to reduce feature space while preserving important structure and interpretability.
+Key Steps
 
-Objectives
+ - Data preprocessing and stratified train-test split
 
-- Understand high-dimensional data representation
-- Apply PCA for variance-based dimensionality reduction
-- Apply NMF for parts-based representation
-- Compare reconstruction quality and interpretability
+ - Baseline Logistic Regression model
 
-Techniques Used
+ - PCA feature reduction (variance-based selection)
 
-- PCA (Eigen decomposition / SVD)
-- NMF (Matrix factorization with non-negativity constraints)
+ - NMF feature extraction (non-negative matrix factorization)
+
+ - Performance evaluation using ROC-AUC, precision, and recall
+
+Results
+
+ - Compared baseline vs PCA vs NMF pipelines
+
+ - Evaluated trade-off between dimensionality reduction and fraud recall
+
+ - Analyzed performance under imbalanced data conditions
 
 Dataset
 
-- Olivetti Dataset
+kaggle
 
-Tech Stack
- 
-- Python
-- NumPy
-- Pandas
-- Scikit-learn
-- Matplotlib / Seaborn
-- Jupyter Notebook
+Tools
 
-
+Python, pandas, scikit-learn, matplotlib
